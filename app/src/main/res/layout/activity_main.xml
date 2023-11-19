@@ -20,12 +20,12 @@
         app:srcCompat="@drawable/pasta" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="158dp"
-        android:layout_height="70dp"
-        android:autoText="false"
+        android:id="@+id/button1"
+        android:layout_width="190dp"
+        android:layout_height="101dp"
         android:backgroundTint="#040404"
         android:foregroundTint="#000000"
+        android:textSize="20sp"
         android:text="@string/botao1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,17 +36,19 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="239dp"
-        android:layout_height="115dp"
+        android:layout_width="224dp"
+        android:layout_height="211dp"
         android:background="#00000000"
         android:backgroundTint="#000000"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/texto_home"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:text="Descubra qual atriz do mundo adulto você é!"
-        android:textSize="30dp"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
