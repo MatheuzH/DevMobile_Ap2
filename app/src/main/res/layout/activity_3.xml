@@ -9,20 +9,20 @@
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="142dp"
-        android:layout_height="146dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="112dp"
+        android:layout_width="155dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="104dp"
         android:rotation="21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fogo" />
 
+
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="171dp"
         android:layout_height="184dp"
-        android:layout_marginTop="512dp"
+        android:layout_marginTop="528dp"
         android:layout_marginEnd="4dp"
         android:rotation="-37"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,32 +35,33 @@
         android:layout_height="348dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.592">
+        app:layout_constraintVertical_bias="0.596">
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioButton5"
             android:layout_width="match_parent"
             android:layout_height="103dp"
             android:buttonTint="#121212"
-            android:text="Borboleta 🦋"
+            android:text="Frango assado 🐓"
             android:textAlignment="center"
             android:textSize="34sp" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioButton6"
             android:layout_width="match_parent"
             android:layout_height="107dp"
-            android:text="Gato 😼"
+            android:text="Papai e mamãe 💏"
             android:textAlignment="center"
             android:textSize="34sp" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/radioButton7"
             android:layout_width="match_parent"
             android:layout_height="103dp"
-            android:text="Tigre 🐯"
+            android:text="Cabeça para baixo 🤸‍"
             android:textAlignment="center"
             android:textSize="34sp" />
 
@@ -70,9 +71,9 @@
         android:id="@+id/textView2"
         android:layout_width="343dp"
         android:layout_height="86dp"
-        android:background="#F4F4F4"
+        android:background="#FFFFFF"
         android:fontFamily="sans-serif-black"
-        android:text="Qual animal você prefere? 🤭😈🤤"
+        android:text="Qual sua posição favorita?😝🥵🥵😈"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#000000"
@@ -85,7 +86,7 @@
         app:layout_constraintVertical_bias="0.078" />
 
     <Button
-        android:id="@+id/button_next1"
+        android:id="@+id/button_next2"
         android:layout_width="171dp"
         android:layout_height="65dp"
         android:layout_marginTop="59dp"
