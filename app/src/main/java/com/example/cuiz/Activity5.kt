@@ -8,11 +8,11 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.RadioButton
 
-class Activity4 : AppCompatActivity() {
+class Activity5 : AppCompatActivity() {
     private lateinit var score: Score
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_4)
+        setContentView(R.layout.activity_5)
 
         window.decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_FULLSCREEN)
 
@@ -23,17 +23,17 @@ class Activity4 : AppCompatActivity() {
         score = ScoreHolder.getScore()
         imgbtn.setOnClickListener() {
             score.adiciona_numero(1)
-            val intent = Intent(this, Activity5::class.java)
+            val intent = Intent(this, ResultActivity::class.java)
             startActivity(intent)
         }
         imgbtn2.setOnClickListener() {
             score.adiciona_numero(5)
-            val intent = Intent(this, Activity5::class.java)
+            val intent = Intent(this, ResultActivity::class.java)
             startActivity(intent)
         }
         imgbtn3.setOnClickListener() {
             score.adiciona_numero(7)
-            val intent = Intent(this, Activity5::class.java)
+            val intent = Intent(this, ResultActivity::class.java)
             startActivity(intent)
         }
     }
