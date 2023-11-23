@@ -22,7 +22,7 @@
         android:id="@+id/imageView11"
         android:layout_width="171dp"
         android:layout_height="184dp"
-        android:layout_marginTop="512dp"
+        android:layout_marginTop="548dp"
         android:layout_marginEnd="4dp"
         android:rotation="-37"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,7 @@
         app:layout_constraintVertical_bias="0.592">
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioButton1"
             android:layout_width="match_parent"
             android:layout_height="103dp"
             android:buttonTint="#121212"
@@ -49,7 +49,7 @@
             android:textSize="34sp" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="107dp"
             android:text="Gato 😼"
@@ -57,7 +57,7 @@
             android:textSize="34sp" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="103dp"
             android:text="Tigre 🐯"
@@ -85,7 +85,7 @@
         app:layout_constraintVertical_bias="0.078" />
 
     <Button
-        android:id="@+id/button_next1"
+        android:id="@+id/button1"
         android:layout_width="171dp"
         android:layout_height="65dp"
         android:layout_marginTop="59dp"

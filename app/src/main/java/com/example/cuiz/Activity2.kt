@@ -4,18 +4,57 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.RadioButton
 
 class Activity2 : AppCompatActivity() {
+    private lateinit var score: Score
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_2)
 
-
-        val botao = findViewById<Button>(R.id.button_next1)
-        botao.setOnClickListener() {
+        val btn = findViewById<Button>(R.id.button1)
+        val rb1 = findViewById<RadioButton>(R.id.radioButton1)
+        val rb2 = findViewById<RadioButton>(R.id.radioButton2)
+        val rb3 = findViewById<RadioButton>(R.id.radioButton3)
+        score = ScoreHolder.getScore()
+        btn.setOnClickListener()
+        {if(rb1.isChecked){
+            score.adiciona_numero(1)
             val intent = Intent(this, Activity3::class.java)
             startActivity(intent)
         }
+            if(rb2.isChecked){
+                score.adiciona_numero(5)
+                val intent = Intent(this, Activity3::class.java)
+                startActivity(intent)
+            }
+            if(rb3.isChecked) {
+                score.adiciona_numero(7)
+                val intent = Intent(this, Activity3::class.java)
+                startActivity(intent)
+            }
+            println(score.getNumber())
+        }
 
+    }
+
+
+    override fun onResume() {
+        super.onResume()
+
+        val rb1 = findViewById<RadioButton>(R.id.radioButton1)
+        val rb2 = findViewById<RadioButton>(R.id.radioButton2)
+        val rb3 = findViewById<RadioButton>(R.id.radioButton3)
+        score = ScoreHolder.getScore()
+
+        if (rb1.isChecked) {
+            score.remove_numero(0)
+        }
+        if (rb2.isChecked) {
+            score.remove_numero(2)
+        }
+        if (rb3.isChecked) {
+            score.remove_numero(3)
+        }
     }
 }
